@@ -1,9 +1,10 @@
 import HandWithPhone from "/assets/images/phone-mockup.png";
+import Slider from "../components/reusable/Slider";
 
 const HomeSection = () => {
     return (
         <>
-            <section className="flex items-center justify-center h-[90vh] flex-col gap-12" id="home-section">
+            <section className="flex items-center justify-center h-[80vh] flex-col gap-12" id="home-section">
                 <div className="w-[90vw] flex justify-between">
                     <div className="text-start z-99 w-[50vw]">
                         <h1 className="text-8xl font-bold mb-4">Bringing your ideas to life in the <span className="text-gray-400">digital world</span></h1>
@@ -29,6 +30,13 @@ const HomeSection = () => {
                     </div>
                 </div>
             </section>
+
+            {/* ========================== Slider
+            ============================== */}
+            <Slider className="w-full text-xl pl-5 bg-lime-300/60 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
+            {/* ========================== End Slider
+            ============================== */}
+
             <div className="bg-gray-300/30 w-[90vw] self-center rounded-2xl flex flex-row justify-around mb-8">
                 <div className="flex justify-end items-end">
                     <img src={HandWithPhone} alt="Hand with phone" className="h-full object-contain self-end rounded-4xl p-4 drop-shadow-2xl" />
