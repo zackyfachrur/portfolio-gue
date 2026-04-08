@@ -9,8 +9,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import { ReactLenis } from 'lenis/react'
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <ReactLenis root>
+      <App />
+    </ReactLenis>
   </StrictMode>,
 )
