@@ -1,10 +1,15 @@
 // import HandWithPhone from "/assets/images/phone-mockup.png";
 import Slider from "../components/reusable/Slider";
+import { motion } from "../lib/motion";
+import { yScrollTransform } from "../scripts/yScrollTransform";
 
 const HomeSection = () => {
+
+    const { ySection } = yScrollTransform();
+
     return (
         <>
-            <section className="flex items-center justify-center h-[90vh] flex-col gap-12" id="home-section">
+            <motion.section className="flex items-center justify-center h-[90vh] flex-col gap-12 z-[-99]" id="home-section" initial="offscreen" whileInView="onscreen" variants={sectionVariants} style={{ y: ySection }}>
                 <div className="flex flex-col w-full h-full justify-between items-center">
                     <div className="flex justify-center items-center flex-col h-full gap-24">
                         <div className="w-[90vw] flex justify-between">
@@ -33,12 +38,27 @@ const HomeSection = () => {
                         </div>
                     </div>
 
-                    <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-lime-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
+                    <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-purple-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
                 </div>
-            </section>
+            </motion.section>
 
         </>
     );
 }
 
 export default HomeSection;
+
+const sectionVariants: any = {
+    offscreen: {
+        y: -500,
+        opacity: 0,
+    },
+    onscreen: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            duration: 0.8,
+        },
+    }
+};
