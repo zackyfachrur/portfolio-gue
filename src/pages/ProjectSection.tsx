@@ -1,5 +1,5 @@
 import ProjectContent from "../json/ProjectContent.json";
-import type { ProjectType } from "../types/declare";
+import type { ProjectType } from "../types/declare.d.ts";
 
 const ProjectSection = () => {
   const Project = ProjectContent.projects.map((project) => {
@@ -54,7 +54,7 @@ const ProjectSection = () => {
         </div>
         <div className="w-[90vw] flex flex-col gap-8">
           <img src={project.thumbnail[0]} alt="Project Restaurant who can manages all operations" className="rounded-2xl" />
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-2 gap-12">
             {project.thumbnail.slice(1).map((thumbnail) => (
               <img src={thumbnail} alt="Project Restaurant who can manages all operations" className="rounded-2xl" />
             ))}
