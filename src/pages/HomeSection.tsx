@@ -33,7 +33,7 @@ const HomeSection = () => {
                         </div>
                     </div>
 
-                    <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-lime-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
+                    <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-purple-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
                 </div>
             </section>
 

@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "project-title": "Paragata Restaurant - One Platform for Stabilize Restaurant Operations",
+            "project-type": "Restaurant Management System",
+            "project-role": "Full-Stack Developer",
+            "project-year": 2023,
+            "project-category": [
+                "Software",
+                "Branding",
+                "Solutions",
+                "Web Design"
+            ],
+            "project-thumbnail": [
+                "../../public/assets/images/project/paragata-project.png",
+                "../../public/assets/images/project/paragata-project-1.jpg",
+                "../../public/assets/images/project/paragata-project-2.jpg",
+                "../../public/assets/images/project/paragata-project-3.jpg"
+            ]
+        }
+    ]
+}
