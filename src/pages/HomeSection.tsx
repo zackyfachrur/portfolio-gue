@@ -1,15 +1,15 @@
 // import HandWithPhone from "/assets/images/phone-mockup.png";
 import Slider from "../components/reusable/Slider";
 import { motion } from "../lib/motion";
-import { yScrollTransform } from "../scripts/yScrollTransform";
+import { useYScrollTransformDown } from "../scripts/ScrollTransform";
 
 const HomeSection = () => {
 
-    const { ySection } = yScrollTransform();
+    const { ySection } = useYScrollTransformDown();
 
     return (
         <>
-            <motion.section className="flex items-center justify-center h-[90vh] flex-col gap-12 z-[-99]" id="home-section" initial="offscreen" whileInView="onscreen" variants={sectionVariants} style={{ y: ySection }}>
+            <motion.section className="flex items-center justify-center h-[100vh] flex-col gap-12 z-[-99]" id="home-section" initial="offscreen" whileInView="onscreen" style={{ y: ySection }}>
                 <div className="flex flex-col w-full h-full justify-between items-center">
                     <div className="flex justify-center items-center flex-col h-full gap-24">
                         <div className="w-[90vw] flex justify-between">
@@ -37,8 +37,9 @@ const HomeSection = () => {
                             </div>
                         </div>
                     </div>
-
-                    <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-purple-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
+                    <motion.div className="w-full">
+                        <Slider className="w-full rotate-1 text-xl self-end pl-5 bg-purple-300 h-[6vh] flex justify-center items-center" Item={["Software Solutions", "Digitalization", "Custom Software", "E-commerce", "Mobile Apps", "Web Development"]} />
+                    </motion.div>
                 </div>
             </motion.section>
 
@@ -48,17 +49,17 @@ const HomeSection = () => {
 
 export default HomeSection;
 
-const sectionVariants: any = {
-    offscreen: {
-        y: -500,
-        opacity: 0,
-    },
-    onscreen: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            type: "spring",
-            duration: 0.8,
-        },
-    }
-};
+// const sectionVariants: any = {
+//     offscreen: {
+//         x: 100,
+//         opacity: 0,
+//     },
+//     onscreen: {
+//         x: 0,
+//         opacity: 1,
+//         transition: {
+//             type: "spring",
+//             duration: 2,
+//         },
+//     }
+// };

@@ -47,6 +47,9 @@ body {
   margin: 0;
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 h1,
