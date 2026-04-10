@@ -1,7 +1,10 @@
 import ProjectContent from "../json/ProjectContent.json";
 import type { ProjectType } from "../types/declare.d.ts";
+import { motion } from "../lib/motion";
+import { useYScrollTransformUp } from "../scripts/ScrollTransform.ts";
 
 const ProjectSection = () => {
+
   const Project = ProjectContent.projects.map((project) => {
     return {
       title: project["project-title"],
@@ -13,13 +16,15 @@ const ProjectSection = () => {
     }
   });
 
+  const { ySection } = useYScrollTransformUp();
+
 
   return (
-
     Project.map((project: ProjectType, index) => (
-      <section
-        className="flex flex-col justify-start items-center h-full gap-12 pt-24 bg-black w-full text-white"
+      <motion.section
+        className="flex flex-col justify-start items-center h-full gap-12 pt-24 bg-black w-full text-white drop-shadow-2xl"
         id="project-section"
+        style={{ y: ySection }}
       >
         <div className="w-[90vw] text-start">
           <span className="self-start text-xl flex font-semibold mb-12">0{index + 1} <span className="text-gray-400">/ 05</span></span>
@@ -60,7 +65,7 @@ const ProjectSection = () => {
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
     ))
 
   );

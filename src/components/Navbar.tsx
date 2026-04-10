@@ -1,8 +1,9 @@
 // import BrandLogo from "/public/assets/images/brand-logo.png";
+import { motion } from "../lib/motion";
 
 const Navbar = () => {
     return (
-        <nav className="w-full h-16 flex items-center justify-center pt-8 z-99">
+        <motion.nav className="w-full flex items-center justify-center py-4 z-99 fixed bg-white" variants={navbarVariants} initial="offscreen" whileInView="onscreen">
             <div className="w-[90vw]  flex items-center justify-between">
                 <div className="flex items-center justify-center">
                     <h2 className="italianno text-2xl font-bold italic"><span className="text-gray-300">Zacky </span>Fachrur <span className="text-lime-500">.</span></h2>
@@ -25,8 +26,23 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-        </nav>
+        </motion.nav>
     )
 }
 
 export default Navbar;
+
+const navbarVariants: any = {
+    offscreen: {
+        y: -10,
+        opacity: 0,
+    },
+    onscreen: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            duration: 1,
+        }
+    }
+}
