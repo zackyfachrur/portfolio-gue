@@ -8,8 +8,8 @@
             "project-category": [
                 "Software",
                 "Branding",
-                "Solutions",
-                "Web Design"
+                "Management System",
+                "Web Application"
             ],
             "project-thumbnail": [
                 "../../public/assets/images/project/paragata-project.png",
@@ -25,7 +25,7 @@
             "project-category": [
                 "Software",
                 "Solutions",
-                "Web Design",
+                "Web Application",
                 "Artificial Intelligence"
             ],
             "project-thumbnail": [
@@ -42,8 +42,8 @@
             "project-category": [
                 "Software",
                 "Solutions",
-                "Web Design",
-                "Artificial Intelligence"
+                "Web Application",
+                "Management System"
             ],
             "project-thumbnail": [
                 "../../public/assets/images/project/cafe-management-project.jpg",
@@ -59,7 +59,7 @@
             "project-category": [
                 "Software",
                 "Solutions",
-                "Web Design",
+                "Web Application",
                 "Blockchain"
             ],
             "project-thumbnail": [
@@ -72,11 +72,11 @@
             "project-title": "Company Profile - Enchanced Business Profile for a Company and Boosting Online Presence",
             "project-type": "Company Profile",
             "project-role": "Front-End Developer",
-            "project-year": 2025,
+            "project-year": 2024,
             "project-category": [
                 "Software",
                 "Solutions",
-                "Web Design",
+                "Websites",
                 "Branding"
             ],
             "project-thumbnail": [

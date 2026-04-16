@@ -22,7 +22,7 @@ const Slider = ({ Item, className }: SliderProps) => {
                 {Item?.map((item, index) => (
                     <SwiperSlide
                         key={index}
-                        className="text-gray-900 drop-shadow-xl font-medium rounded-2xl flex items-center gap-2"
+                        className="text-white drop-shadow-xl font-medium rounded-2xl flex items-center gap-2"
                     >
                         <i className="ri-circle-fill pr-32 text-sm"></i>
                         {item}

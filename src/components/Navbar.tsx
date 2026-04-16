@@ -3,10 +3,10 @@ import { motion } from "../lib/motion";
 
 const Navbar = () => {
     return (
-        <motion.nav className="w-full flex items-center justify-center py-4 z-99 fixed bg-white" variants={navbarVariants} initial="offscreen" whileInView="onscreen">
+        <motion.nav className="w-full flex items-center justify-center py-4 z-99" variants={navbarVariants} initial="offscreen" whileInView="onscreen">
             <div className="w-[90vw]  flex items-center justify-between">
                 <div className="flex items-center justify-center">
-                    <h2 className="italianno text-2xl font-bold italic"><span className="text-gray-300">Zacky </span>Fachrur <span className="text-lime-500">.</span></h2>
+                    <h2 className="italianno text-2xl font-bold italic"><span className="text-gray-300">Jaki</span>Dev<span className="text-lime-900">.</span></h2>
                 </div>
 
                 {
@@ -20,8 +20,8 @@ const Navbar = () => {
                 }
 
                 <div className="flex items-center justify-center gap-4">
-                    <button className="border-2 outline-none border-gray-900 font-medium p-4 flex gap-2 items-center rounded-full">Let's Talk <i className="ri-chat-3-line"></i></button>
-                    <button className="border-2 border-gray-900 p-2 w-14 h-14 rounded-full cursor-pointer hover:scale-95">
+                    <button className="font-medium px-8 py-2 flex gap-2 items-center bg-lime-900">Let's Talk <i className="ri-chat-3-line"></i></button>
+                    <button className="p-2 w-14 h-14 rounded-full cursor-pointer hover:scale-95">
                         <i className="ri-menu-4-line text-xl font-bold"></i>
                     </button>
                 </div>
@@ -42,7 +42,7 @@ const navbarVariants: any = {
         opacity: 1,
         transition: {
             type: "spring",
-            duration: 1,
+            duration: 2,
         }
     }
 }
