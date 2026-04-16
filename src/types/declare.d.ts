@@ -6,3 +6,7 @@ export type ProjectType = {
   category: Array<string>;
   thumbnail: Array<string>;
 }
+
+export type PresentIconType = {
+  image: string;
+}

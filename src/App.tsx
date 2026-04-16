@@ -3,16 +3,20 @@
 
 // ================= Pages
 import HomeSection from "./pages/HomeSection"
-import ProjectSection from "./pages/ProjectSection"
+import PresentSection from "./pages/PresentSection"
 import Navbar from "./components/Navbar"
+import CustomCursor from "./components/CustomCursor"
 
 function App() {
 
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <HomeSection />
-      <ProjectSection />
+      <PresentSection />
+
+      {/* <FrojectSection /> */}
     </>
   )
 }

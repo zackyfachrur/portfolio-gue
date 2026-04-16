@@ -1,7 +1,7 @@
 import ProjectContent from "../json/ProjectContent.json";
 import type { ProjectType } from "../types/declare.d.ts";
 import { motion } from "../lib/motion";
-import { useYScrollTransformUp } from "../scripts/ScrollTransform.ts";
+import { useYScrollTransformUp } from "../helper/ScrollTransform.ts";
 
 const ProjectSection = () => {
 
@@ -22,7 +22,7 @@ const ProjectSection = () => {
   return (
     Project.map((project: ProjectType, index) => (
       <motion.section
-        className="flex flex-col justify-start items-center h-full gap-12 pt-24 bg-black w-full text-white drop-shadow-2xl"
+        className="flex flex-col justify-start items-center h-full gap-12 pt-52 bg-black w-full text-white drop-shadow-2xl"
         id="project-section"
         style={{ y: ySection }}
       >
