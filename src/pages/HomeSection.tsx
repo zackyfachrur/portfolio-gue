@@ -1,11 +1,11 @@
 import { Avatar } from "../constants/images"
 import Slider from "../components/reusable/Slider";
 import { motion } from "../lib/motion";
-import { useYScrollTransformDown } from "../helper/ScrollTransform";
+// import { useYScrollTransformDown } from "../helper/ScrollTransform";
 
 const HomeSection = () => {
 
-    const { ySection } = useYScrollTransformDown();
+    // const { ySection } = useYScrollTransformDown();
 
     return (
         <>

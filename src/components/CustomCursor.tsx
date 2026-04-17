@@ -14,7 +14,7 @@ const CustomCursor = () => {
                 borderRadius: '50%',
                 position: 'fixed',
                 pointerEvents: 'none',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                backgroundColor: 'rgba(60, 99, 0, 0.5)',
                 zIndex: 9999,
                 transform: 'translate(-50%, -50%)',
             }}
